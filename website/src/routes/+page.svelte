@@ -21,7 +21,7 @@
     let value: DateValue | undefined = undefined;
 
     import type { PageData } from "./$types.js";
-  import SettingsForm from "./settings-form.svelte";
+  import SettingsForm from "./settings/settings-form.svelte";
   export let data: PageData;
   </script>
    
