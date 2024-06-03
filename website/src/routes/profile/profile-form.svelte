@@ -57,7 +57,7 @@
 	<Form.Field {form} name="username">
 		<Form.Control let:attrs>
 			<Form.Label>Username</Form.Label>
-			<Input placeholder="@shadcn" {...attrs} bind:value={$formData.username} />
+			<Input placeholder="AyanBalajiKani" {...attrs} bind:value={$formData.username} />
 		</Form.Control>
 		<Form.Description>
 			This is your public display name. It can be your real name or a pseudonym. You can only
