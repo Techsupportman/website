@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "svelte-sonner": "^0.3.24"
+    "formsnap": "^1.0.0",
+    "svelte-sonner": "^0.3.24",
+    "sveltekit-superforms": "^2.14.0",
+    "zod": "^3.23.8"
   }
 }
