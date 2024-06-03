@@ -9,7 +9,7 @@
 		bio: z.string().min(4).max(160).default("I own a computer."),
 		urls: z
 			.array(z.string().url())
-			.default(["https://shadcn.com", "https://twitter.com/shadcn"]),
+			.default(["https://website-f8xrvzhxt-repulsor23s-projects.vercel.app", "https://www.youtube.com/channel/UC7fx-zp_nfj1c61oI6dmtUQ"]),
 	});
 	export type ProfileFormSchema = typeof profileFormSchema;
 </script>
