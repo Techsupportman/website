@@ -5,6 +5,8 @@ import "../app/globals.css"
 import { Separator } from "@/components/ui/separator"
 import { SidebarNav } from "@/components/sidebar-nav"
 
+import { ThemeProvider } from "@/components/theme-provider"
+
 export const metadata: Metadata = {
   title: "Forms",
   description: "Advanced form example using react-hook-form and Zod.",
@@ -39,9 +41,22 @@ interface SettingsLayoutProps {
 
 export default function SettingsLayout({ children }: SettingsLayoutProps) {
   return (
+
+
+    
     <html>
       <body>
         <>
+
+        <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              {children}
+            </ThemeProvider>
+
           <div className="md:hidden">
             <Image
               src="/examples/forms-light.png"
@@ -78,3 +93,6 @@ export default function SettingsLayout({ children }: SettingsLayoutProps) {
     </html>
   )
 }
+
+
+
