@@ -26,6 +26,13 @@ import {
 } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/components/ui/use-toast"
+import { Toaster } from "@/components/ui/toaster"
+
+type FormValues = {
+  username: string
+
+  
+}
 
 const profileFormSchema = z.object({
   username: z
@@ -83,11 +90,13 @@ export function ProfileForm() {
         </pre>
       ),
     })
+    console.log("form submitted")
   }
 
 
 
   return (
+    
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <FormField
@@ -188,6 +197,8 @@ export function ProfileForm() {
         </div>
         <Button type="submit">Update profile</Button>
       </form>
+      <Toaster />
     </Form>
+    
   )
 }
